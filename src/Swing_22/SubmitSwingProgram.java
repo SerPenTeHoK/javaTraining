@@ -14,9 +14,12 @@ public class SubmitSwingProgram extends JFrame{
         super("Hello Swing");
         label = new JLabel("A label");
         this.add(label);
+        SwingConsole.run(this, 300, 100);
+        /*
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(300, 100);
         this.setVisible(true);
+        */
     }
 
     public static void main(String[] args) throws Exception {
@@ -30,7 +33,7 @@ public class SubmitSwingProgram extends JFrame{
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                ssp.label.setText("Normal!");
+                ssp.label.setText("Normal! Yes");
             }
         });
     }
