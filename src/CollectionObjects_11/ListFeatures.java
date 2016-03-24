@@ -4,7 +4,7 @@ import typeinfo.pets.*;
 
 import java.util.*;
 
-import static net.mindview.util.Print.print;
+import static net.mindview.util.Print.*;
 
 public class ListFeatures {
     public static void main(String[] args) {
@@ -61,8 +61,6 @@ public class ListFeatures {
         Pet[] pa = pets.toArray(new Pet[0]);
         print("23: " + pa[3].id());
     }
-
-
 } /* Output:
 1: [Rat, Manx, Cymric, Mutt, Pug, Cymric, Pug]
 2: [Rat, Manx, Cymric, Mutt, Pug, Cymric, Pug, Hamster]
